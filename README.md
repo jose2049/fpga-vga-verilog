@@ -11,3 +11,6 @@ I also used AI to understand how to make a circle on the screen. I need to use t
 of a circle to check whether the pixel is inside
 pic:
 
+
+# Week 9 progress 4
+I got new code to make a circle from my lecturer, which I implemented
