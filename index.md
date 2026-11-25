@@ -25,9 +25,8 @@ The Bassys_master.xdc file dines the physical pin assignments and hardware const
 
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
-In simulation is where we get to see the behaviour of our code. There are different parameters which correspond to clok, reset, colours etc.
 
-So I can see at time at the positive clock edge there's a change for the value of column. There's no change on the 
+In simulation is where we get to see the behaviour of our code. There are different parameters which correspond to clok, reset, colours etc.
 
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
