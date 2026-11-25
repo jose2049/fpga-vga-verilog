@@ -28,10 +28,14 @@ Explain the simulation process. Reference any important details, include a well-
 
 In simulation is where we get to see the behaviour of our code. There are different parameters which correspond to clok, reset, colours etc.
 
+Every time at the rising edge of the clock the col[10:0] input increases its value. Because on the code is specified that at up to pixel 80 the pixels have to have a black colour, when it reaches pixel 160 it the pixel in between will update and have a different colour. When the ccol[10:0] reaches it's max value it is update it and hvsync is set to 1 and row[10:0] increases its value.
+
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 
-<img src="" width="200" height="200">
+Synthesis is the process of turning a high-level description of a circuit, written in Verilog, into a lower-level representation that can be built in an FPGA or an ASIC. The result is usually a netlist: a list of gates, flip-flops and other cells from a target library, and the wires that connect them.
+
+Synthesis maps the abstract behavior of the design, such as "add these two numbers on every clock edge", onto real hardware components, and optimizes the result for area, timing and power. For an ASIC, the components are standard cells such as NAND gates and flip-flops; for an FPGA, they are look-up tables (LUTs), flip-flops, carry chains, block RAMs and DSP blocks.
 
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
@@ -68,8 +72,11 @@ Finally the when this error was fixed the button parameter was added to the test
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 
+Due to the 
+
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="200" height="200">
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/blueCircle.jpeg" width="200" height="200">
@@ -82,14 +89,11 @@ Font can be emphasised as *Italic* or **Bold**.
 
 Code can be highlighted by using `backticks`.
 
-Hyperlinks look like this: [GitHub Help](https://help.github.com/).
-https://chipverify.com/verilog/verilog-testbench
+Hyperlinks:
+[testbench definition](https://chipverify.com/verilog/verilog-testbench)
+[synthesis definition](https://chipverify.com/verilog/verilog-synthesis)
 
 A bullet list can be rendered as follows:
 - vectors
 - algorithms
 - iterators
-
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
