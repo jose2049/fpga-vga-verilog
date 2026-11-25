@@ -35,8 +35,10 @@ Describe the synthesis and implementation processes. Consider including 1/2 usef
 
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+
 My demo was to create the Spanish flag:
-<img src="" width="200" height="200">
+
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/spanishFlag.jpeg" width="200" height="200">
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
