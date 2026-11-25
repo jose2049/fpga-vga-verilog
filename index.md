@@ -11,7 +11,7 @@ Hi welcome to my FGPA VGA Driver Project where I am going to show how I created 
 ### **Project Set-Up**
 I used the Xilinx Artix-7 board. I used Vivado to development environment to configure the Xilinx Artix-7 board. The language I used to program the board was Verilog.
 I was given the VGAColourStripes.v file which contains the logic responsible for generating the colours/patterns displayed on the screen. I was given the VGASync.v fiel which generates the VGA synchronization signals (horizontal and vertical sync) and pixel coordinates. Finally, I was given the Bassys3_Master.xdc file which defines the physical pin assignments and hardware constrains for the Bassys 3 board.
-## <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSummary.png">
+## <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSummary.png" width="300" height="300">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 The structure that I was given was a testbench, VGASync, ColourStripe and Basys2_Master.xdc.
@@ -48,8 +48,8 @@ Describe the synthesis & implementation outputs for your design, are there any d
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
-<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="300" height="150">
-<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/blueCircle.jpeg" width="200" height="150">
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="200" height="200">
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/blueCircle.jpeg" width="200" height="200">
 
 
 ## **More Markdown Basics**
