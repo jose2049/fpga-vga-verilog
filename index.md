@@ -14,9 +14,12 @@ I was given the VGAColourStripes.v file which contains the logic responsible for
 ## <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSummary.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
-The structure that I was given was a testbench, VGASync, ColourStripe and Basys2_Master.xdc. 
+The structure that I was given was a testbench, VGASync, ColourStripe and Basys2_Master.xdc.
+
 A testbench is a simulation environment used to verify the functionality and correctness of a design written in Verilog. It applies inputs to the design, observes its outputs, and checks whether the outputs are what the specification says they should be. Testbenches let engineers simulate a design under many different conditions before it is turned into hardware. Bugs found in simulation cost minutes to fix; the same bugs found in a manufactured chip can cost months and the price of a new set of masks. 
+
 The VGASync module is responsible for generating the VGA synchronization signals and tracking the current pixel position on the display. It uses two 11-bit counters, hcount and vcount, to track the horizontal and vertical pixel positions. Once it reaches its maximum value (799), it resets to zero and increments the vertical counter. The synchronization signals are uses to tell the monitor when to return to a new line. It also generates a vid_on signal, which identifies whether the current pixel is within the visible 640 × 480 display area. Finally, the row and col outputs provide the current pixel coordinates to other modules, allowing them to determine which colour should be displayed at each position.
+
 The Bassys_master.xdc file dines the physical pin assignments and hardware constrains for the Bassys 3 board.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
