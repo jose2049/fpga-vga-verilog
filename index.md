@@ -48,7 +48,7 @@ Describe the synthesis & implementation outputs for your design, are there any d
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
-<img src="">
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="300" height="150">
 <img src="">
 
 
