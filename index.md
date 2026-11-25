@@ -62,7 +62,7 @@ One of the main changes that I saw was that there was no button parameter on the
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationNoButton.png" width="1200" height="1500">
 
 Finally the when this error was fixed the button parameter was added to the testbench in the Simulation Source, but an error occurred as the signal for the button was displayed as inactive.
-<img src="" width="1200" height="1500">
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationButtonInactive.png" width="1200" height="1500">
 
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
