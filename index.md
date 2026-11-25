@@ -73,6 +73,7 @@ Due to the badly implementation of the picture, I cannot see any noticeable chan
 ### **Demonstration**
 
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
+
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="200" height="200">
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/blueCircle.jpeg" width="200" height="200">
 
