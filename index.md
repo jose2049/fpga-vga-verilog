@@ -11,7 +11,7 @@ Hi welcome to my FGPA VGA Driver Project where I am going to show how I created 
 ### **Project Set-Up**
 My project idea was to push a button and to display different images on my monitor. First I went to try different stripe colours to understand how does the code work. Once I got a sense of it I decided to make a circle. But in order to make a circle I needed to use the mathematical formula to create a circle. I used AI and my lectures notes to understand how does that work. Later I decided to use the button to swap between two pictures. I uncomment from the Basus3_Master.xdc file set_property PACKAGE_PIN U18 [get_ports button] and set_property IOSTANDARD LVCMOS33 [get_ports button] lines and assigned button to both of them.  (Pics for examples)
 
-## <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
+## <img src=" ">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
