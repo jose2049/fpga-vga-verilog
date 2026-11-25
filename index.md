@@ -24,14 +24,12 @@ The VGASync module is responsible for generating the VGA synchronization signals
 The Bassys_master.xdc file dines the physical pin assignments and hardware constrains for the Bassys 3 board.
 
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 
 In simulation is where we get to see the behaviour of our code. There are different parameters which correspond to clok, reset, colours etc.
 
 Every time at the rising edge of the clock the col[10:0] input increases its value. Because on the code is specified that at up to pixel 80 the pixels have to have a black colour, when it reaches pixel 160 it the pixel in between will update and have a different colour. When the ccol[10:0] reaches it's max value it is update it and hvsync is set to 1 and row[10:0] increases its value.
 
 ### **Synthesis**
-Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 
 Synthesis is the process of turning a high-level description of a circuit, written in Verilog, into a lower-level representation that can be built in an FPGA or an ASIC. The result is usually a netlist: a list of gates, flip-flops and other cells from a target library, and the wires that connect them.
 
@@ -45,7 +43,6 @@ My demo was to create the Spanish flag:
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/spanishFlag.jpeg" width="200" height="200">
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 
 My project idea was to push a button and to display different images on my monitor. First I went to try different stripe colours to understand how does the code work. Once I got a sense of it I decided to make a circle. But in order to make a circle I needed to use the mathematical formula to create a circle. I used AI and my lectures notes to understand how does that work. Later I decided to use the button to swap between two pictures. The  pictures I wanted to swap around were a circle and a cross.
 ### **Code Adaptation**
@@ -56,8 +53,6 @@ A circle was made by using AI and my lectures notes to understand how does that 
 The set_property PACKAGE_PIN U18 [get_ports button] and set_property IOSTANDARD LVCMOS33 [get_ports button] lines from the Basus3_Master.xdc file  were uncomment to enable the button and to assign it to the testbench and ColourStripe module to make use of it.
 
 ### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
-
 
 There was a architecture mistake as well as by accident the I was working on the Design Source folder instead of the Simulation Source folder which led to multiple error when the simulation was run.
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationErrors.png" width="1200" height="1500">
@@ -70,12 +65,12 @@ Finally the when this error was fixed the button parameter was added to the test
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationButtonInactive.png" width="1200" height="1500">
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 
-Due to the 
+Due to the badly implementation of the picture, I cannot see any noticeable chance or differences from the original design despite the lack of the original design. 
+
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSynthesis.png" width="1200" height="1500">
 
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="200" height="200">
