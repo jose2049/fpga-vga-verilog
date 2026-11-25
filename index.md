@@ -46,11 +46,12 @@ My demo was to create the Spanish flag:
 
 My project idea was to push a button and to display different images on my monitor. First I went to try different stripe colours to understand how does the code work. Once I got a sense of it I decided to make a circle. But in order to make a circle I needed to use the mathematical formula to create a circle. I used AI and my lectures notes to understand how does that work. Later I decided to use the button to swap between two pictures. The  pictures I wanted to swap around were a circle and a cross.
 ### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
-A circle was made by using AI and my lectures notes to understand how does that work. Later I decided to use the button to swap between two pictures.
+A circle was made by using AI and my lectures notes to understand how does that work. In order to create a circle I needed to use the mathematical formula of the circle to create the circle and use a if statement to check whether the pixel is inside or outside the area of the circle. Later I decided to use the button to swap between two pictures.
 
 The set_property PACKAGE_PIN U18 [get_ports button] and set_property IOSTANDARD LVCMOS33 [get_ports button] lines from the Basus3_Master.xdc file  were uncomment to enable the button and to assign it to the testbench and ColourStripe module to make use of it.
+
+I used a case statement on the register "picture_select" of two bit to swap between the pictures. A new register was created to hold the old state value of the button, and an input was created to receive the button press values from hardware. So every time the new reading of the button is 1 and the old reading was 0 then check current state. If the current state is 2 the go back to state 0. Otherwise add 1 to the current state. 
 
 ### **Simulation**
 
@@ -66,30 +67,19 @@ Finally the when this error was fixed the button parameter was added to the test
 
 ### **Synthesis**
 
-Due to the badly implementation of the picture, I cannot see any noticeable chance or differences from the original design despite the lack of the original design. 
+Due to the badly implementation of the picture, I cannot see any noticeable chance or differences from the original design despite of not having the original design. 
 
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSynthesis.png" width="1200" height="1500">
 
 ### **Demonstration**
 
-The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
+The design worked out well but not successfully. There's an issue when the button is pressed and that is that whenever the button is pressed it has to match the exact rising edge of the clock in order to swap between the pictures successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
 
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/redCircle.jpeg" width="200" height="200">
 <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/blueCircle.jpeg" width="200" height="200">
 
 
-## **More Markdown Basics**
-This is a paragraph. Add an empty line to start a new paragraph.
-
-Font can be emphasised as *Italic* or **Bold**.
-
-Code can be highlighted by using `backticks`.
-
-Hyperlinks:
+### Hyperlinks:
 [testbench definition](https://chipverify.com/verilog/verilog-testbench)
 [synthesis definition](https://chipverify.com/verilog/verilog-synthesis)
 
-A bullet list can be rendered as follows:
-- vectors
-- algorithms
-- iterators
