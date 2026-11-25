@@ -27,14 +27,17 @@ The Bassys_master.xdc file dines the physical pin assignments and hardware const
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 In simulation is where we get to see the behaviour of our code. There are different parameters which correspond to clok, reset, colours etc.
 
-So I can see at time at the positive clock edge there's a change for the value of column 
-<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationNoButton.jpeg" width="200" height="200">
+So I can see at time at the positive clock edge there's a change for the value of column. There's no change on the 
+
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationNoButton.png" width="1200" height="1500">
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 
-<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/test1.jpeg" width="200" height="200">
+<img src="" width="200" height="200">
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+My demo was to create the Spanish flag:
+<img src="" width="200" height="200">
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
@@ -49,11 +52,21 @@ The set_property PACKAGE_PIN U18 [get_ports button] and set_property IOSTANDARD 
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+
+
+There was a architecture mistake as well as by accident the I was working on the Design Source folder instead of the Simulation Source folder which led to multiple error when the simulation was run.
 <img src="">
+
+One of the main changes that I saw was that there was no button parameter on the testbench to simulate the button signal. Also there is not a visible change on the vertical pixels and the colours were not changing due to a mistake taking the picture as I had to wait to the col[10:0] to reach out to it max value. 
+
+<img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/simulationNoButton.png" width="1200" height="1500">
+
+Finally the when this error was fixed the button parameter was added to the testbench in the Simulation Source, but an error occurred as the signal for the button was displayed as inactive.
 <img src="">
+
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
-<img src="">
+
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 The design worked successfully. If the middle button is pressed the picture will change. Due to lack of preparation the cross was not successfully implemented as it required to calculate the points of the line, the slope and the equation of the line to be implemented. However I used the same circle with a different colour to test the code.
