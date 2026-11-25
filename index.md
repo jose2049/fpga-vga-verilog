@@ -11,7 +11,7 @@ Hi welcome to my FGPA VGA Driver Project where I am going to show how I created 
 ### **Project Set-Up**
 I used the Xilinx Artix-7 board. I used Vivado to development environment to configure the Xilinx Artix-7 board. The language I used to program the board was Verilog.
 I was given the VGAColourStripes.v file which contains the logic responsible for generating the colours/patterns displayed on the screen. I was given the VGASync.v fiel which generates the VGA synchronization signals (horizontal and vertical sync) and pixel coordinates. Finally, I was given the Bassys3_Master.xdc file which defines the physical pin assignments and hardware constrains for the Bassys 3 board.
-## <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSummary.png" width="500" height="500">
+## <img src="https://github.com/jose2049/fpga-vga-verilog/blob/main/projectSummary.png" width="1200" height="1500">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 The structure that I was given was a testbench, VGASync, ColourStripe and Basys2_Master.xdc.
